@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>COSC1078-A2</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
-<link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>COSC1078-A2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-black">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush mx-3 mt-4">
+                <a href="index.html" class="list-group-item list-group-item-action " aria-current="true"><span>Home</span></a>
+                <a href="teamprofile.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Team Profile</span></a>
+                <a href="jobsandcareerplans.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Career Plans</span></a>
+                <a href="groupprocesses.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Group processes</span></a>
+                <a href="artifact.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Artefacts</span></a>
+                <a href="projectdescription.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Project description</span></a>
+                <a href="overview.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Overview</span></a>
+                <div class="dropdown">
+                    <a href="#more-detailed" class="list-group-item list-group-item-action "
+                       aria-current="true" data-mdb-toggle="collapse"><span>Detailed Description</span></a>
+                    <ul id="more-detailed" class="collapse list-group list-group-flush dropdown-toggle">
+                        <li class="list-group-item "><a href="detaileddescription.html#aim">Aims</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#plan">Plans and progress</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#role">Roles</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#scope">Scope and Limits</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#tools">Tools and technologies</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#testing">Testing</a></li>
+                    </ul>
+                </div>
+                <a href="timeframe.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Time Frame</span></a>
+                <a href="reflection.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Reflections</span></a>
+                <a href="Tools.html" class="list-group-item list-group-item-action"
+                   aria-current="true"><span>Tools</span></a>
+            </div>
+        </div>
+    </nav>
+
 </head>
 <body>
-<div class="row-local">
-	<div class="side">
-        <div class="navbar"><br><br><br>
-            <a href="index.html">Home</a><br>
-            <a href="teamprofile.html">Team Profile</a><br>
-            <a href="jobsandcareerplans.html">Career Plans</a><br>
-            <a href="groupprocesses.html">Group processes</a><br>
-            <a href="artifact.html">Artefacts</a><br>
-            <a href="projectdescription.html">Project description</a><br>
-            <a class="current" href="overview.html">Overview</a><br>
-            <a href="detaileddescription.html">Detailed Description</a><br>
-            <a href="timeframe.html">Time Frame</a><br>
-            <a href="reflection.html">Reflections</a><br>
-            <a href="Tools.html">Tools</a><br>
-        </div>
-    </div>
-    <div class="main">
+<main class="main">
+    <div class="container">
         <h1>Overview</h1>
         <h2>Topic</h2>
         <p>With this project, we as a group have the common goal of creating an easy-to-use application, specifically an AR (Augmented Reality) navigation tool, to assist our fellow RMIT peers, lecturers, tutors and frankly anyone that visits the RMIT City Campus to find their way around. The RMIT Campus for most people can be quite daunting initially, considering the numerous buildings, levels and rooms. Therefore, our idea to develop this mobile application involves implementing a sense of ease to those who may be confused when it comes to navigating the campus.</p>
@@ -39,10 +66,7 @@ body {
         <h2>Landscape</h2>
         <p>Since our design is only relevant to the RMIT City Campus, there are no real competitors in this market or intended area. Some examples which are similar include the RMIT Map and essentially Google Maps. However, these are both limiting, the RMIT map can tell you where the buildings are, but it doesn’t include how to access the building and travel to or locate specific rooms on different levels. This map is also not very interactive and can only provide a limited navigation of the campus. The next biggest competitor would be Google Maps, as if you search up an RMIT building it will tell you how to get to the building and can provide a live 360 view with virtual directions, similar to our application. However, again this is limited as it doesn’t provide how to enter the building or any directions within the building. This is precisely how our application prevails, it provides navigation from the street view, but can also show you the pinpoint location of a room within the building, with virtual directions on how to get there. This will be provided on the application through lines on the mobile phone view of the building, accessed through the phone’s camera, directing an individual to their required destination.</p>
     </div>
-</div>
-<div class="footer">
-  <h2>Last updated: 25/05/2022</h2>
-</div>
+</main>
 </body>
 <div class="footer">
     <h2>Last updated: 28/05/2022</h2>

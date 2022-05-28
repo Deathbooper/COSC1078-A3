@@ -1,70 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>COSC1078-A2</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
-<link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>COSC1078-A2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-black">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush mx-3 mt-4">
+                <a href="index.html" class="list-group-item list-group-item-action " aria-current="true"><span>Home</span></a>
+                <a href="teamprofile.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Team Profile</span></a>
+                <a href="jobsandcareerplans.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Career Plans</span></a>
+                <a href="groupprocesses.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Group processes</span></a>
+                <a href="artifact.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Artefacts</span></a>
+                <a href="projectdescription.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Project description</span></a>
+                <a href="overview.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Overview</span></a>
+                <div class="dropdown">
+                    <a href="#more-detailed" class="list-group-item list-group-item-action "
+                       aria-current="true" data-mdb-toggle="collapse"><span>Detailed Description</span></a>
+                    <ul id="more-detailed" class="collapse list-group list-group-flush dropdown-toggle">
+                        <li class="list-group-item "><a href="detaileddescription.html#aim">Aims</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#plan">Plans and progress</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#role">Roles</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#scope">Scope and Limits</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#tools">Tools and technologies</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#testing">Testing</a></li>
+                    </ul>
+                </div>
+                <a href="timeframe.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Time Frame</span></a>
+                <a href="reflection.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Reflections</span></a>
+                <a href="Tools.html" class="list-group-item list-group-item-action"
+                   aria-current="true"><span>Tools</span></a>
+            </div>
+        </div>
+    </nav>
 
 </head>
 <body>
- <div class="row-local">
-        <div class="side">
-            <div class="navbar"><br><br><br>
-                <a href="index.html">Home</a><br>
-                <a class= "current" href="teamprofile.html">Team Profile</a><br>
-                <a href="jobsandcareerplans.html">Career Plans</a><br>
-                <a href="groupprocesses.html">Group processes</a><br>
-                <a href="artifact.html">Artefacts</a><br>
-                <a href="projectdescription.html">Project description</a><br>
-                <a href="overview.html">Overview</a><br>
-                <a href="detaileddescription.html">Detailed Description</a><br>
-                <a href="timeframe.html">Time Frame</a><br>
-                <a href="reflection.html">Reflections</a><br>
-                <a href="Tools.html">Tools</a><br>
-
-            </div>
-        </div>
-      <div class="main">
-          <h1>Team Profile</h1>
-          <h2>Adrian</h2>
-          <img src="profileimages/AdrianBriggsTest.png" alt="Adrian's Myers-Briggs Test" width="400">
-          <img src="profileimages/AdrianEducation.png" alt="Adrian's Learning Style Test" width="400">
-          <img src="profileimages/AdrianPersonality.png" alt="Adrian's Personality Factors Test" width="400">
-          <h2>Heath</h2>
-          <img src="profileimages/HeathBriggsTest.PNG" alt="Heath's Myers-Briggs Test" width="400">
-          <img src="profileimages/HeathEducation.PNG" alt="Heath's Learning Style Test" width="300">
-          <img src="profileimages/HeathPersonality.PNG" alt="Heath's Personality Factors Test" width="300">
-          <h2>Lachlan</h2>
-          <img src="profileimages/LachlanBriggsTest.PNG" alt="Lachlan's Myers-Briggs Test" width="400">
-          <img src="profileimages/LachlanEducation.PNG" alt="Lachlan's Learning Style Test" width="400">
-          <img src="profileimages/LachlanPersonality.PNG" alt="Lachlan's Personality Factors Test" width="400">
-          <h2>Shiou-Ping</h2>
-          <img src="profileimages/ShiouPingBriggsTest.png" alt="Shiou-Ping's Myers-Briggs Test" width="300">
-          <img src="profileimages/ShiouPingEducation.png" alt="Shiou-Ping's Learning Style Test" width="400">
-          <img src="profileimages/ShiouPingEconomic.png" alt="Shiou-Pings's Economics 8 Values Test" width="200">
-          <h2>Henry</h2>
-          <img src="profileimages/HenryBriggsTest.PNG" alt="Henry's Myers-Briggs Test" width="300">
-          <img src="profileimages/HenryEducation.PNG" alt="Henry's Learning Style Test" width="400">
-          <img src="profileimages/HenryPersonality.PNG" alt="Henry's Personality Factors Test" width="400">
-          <h2>Ryan</h2>
-          <img src="profileimages/RyanBriggsTest.PNG" alt="Ryan's Myers-Briggs Test" width="200">
-          <img src="profileimages/RyanEducation.PNG" alt="Ryan's Learning Style Test" width="400">
-          <img src="profileimages/RyanLeadership.PNG" alt="Ryan's Leadership Style Test" width="400">
-            <br><br>
-          <h2>Impact</h2>
-          <p>This information has a couple of ways to be useful for our group. Firstly, the similarities between our learning styles, namely having several visual learners, some tactile learners and a couple of reflectors, means that we will be able to work together assist each other in ways that complement our individual learning styles. Secondly, the Myers-Briggs results give us an indication of how each group member will behave in a team and what role they will fill. As we have a range of results, with no member having the same type as another, we should cover a wide range of roles within a team and be able to fill any gaps that may arise. The third test is a little harder to estimate its impact, as there were a couple of different tests done amongst the group, and they tended to be more related to personality traits and behaviour. These could give another indicator as to how we will each fulfil our roles within the group, but not as clearly as the Myers-Briggs test does.</p>
-      </div>
+<main class="main">
+    <div class="container">
+        <h1>Team Profile</h1>
+        <h2>Adrian</h2>
+        <img src="profileimages/AdrianBriggsTest.png" alt="Adrian's Myers-Briggs Test" width="400">
+        <img src="profileimages/AdrianEducation.png" alt="Adrian's Learning Style Test" width="400">
+        <img src="profileimages/AdrianPersonality.png" alt="Adrian's Personality Factors Test" width="400">
+        <h2>Heath</h2>
+        <img src="profileimages/HeathBriggsTest.PNG" alt="Heath's Myers-Briggs Test" width="400">
+        <img src="profileimages/HeathEducation.PNG" alt="Heath's Learning Style Test" width="300">
+        <img src="profileimages/HeathPersonality.PNG" alt="Heath's Personality Factors Test" width="300">
+        <h2>Lachlan</h2>
+        <img src="profileimages/LachlanBriggsTest.PNG" alt="Lachlan's Myers-Briggs Test" width="400">
+        <img src="profileimages/LachlanEducation.PNG" alt="Lachlan's Learning Style Test" width="400">
+        <img src="profileimages/LachlanPersonality.PNG" alt="Lachlan's Personality Factors Test" width="400">
+        <h2>Shiou-Ping</h2>
+        <img src="profileimages/ShiouPingBriggsTest.png" alt="Shiou-Ping's Myers-Briggs Test" width="300">
+        <img src="profileimages/ShiouPingEducation.png" alt="Shiou-Ping's Learning Style Test" width="400">
+        <img src="profileimages/ShiouPingEconomic.png" alt="Shiou-Pings's Economics 8 Values Test" width="200">
+        <h2>Henry</h2>
+        <img src="profileimages/HenryBriggsTest.PNG" alt="Henry's Myers-Briggs Test" width="300">
+        <img src="profileimages/HenryEducation.PNG" alt="Henry's Learning Style Test" width="400">
+        <img src="profileimages/HenryPersonality.PNG" alt="Henry's Personality Factors Test" width="400">
+        <h2>Ryan</h2>
+        <img src="profileimages/RyanBriggsTest.PNG" alt="Ryan's Myers-Briggs Test" width="200">
+        <img src="profileimages/RyanEducation.PNG" alt="Ryan's Learning Style Test" width="400">
+        <img src="profileimages/RyanLeadership.PNG" alt="Ryan's Leadership Style Test" width="400">
+        <br><br>
+        <h2>Impact</h2>
+        <p>This information has a couple of ways to be useful for our group. Firstly, the similarities between our learning styles, namely having several visual learners, some tactile learners and a couple of reflectors, means that we will be able to work together assist each other in ways that complement our individual learning styles. Secondly, the Myers-Briggs results give us an indication of how each group member will behave in a team and what role they will fill. As we have a range of results, with no member having the same type as another, we should cover a wide range of roles within a team and be able to fill any gaps that may arise. The third test is a little harder to estimate its impact, as there were a couple of different tests done amongst the group, and they tended to be more related to personality traits and behaviour. These could give another indicator as to how we will each fulfil our roles within the group, but not as clearly as the Myers-Briggs test does.</p>
     </div>
-    <div class="footer">
-      <h2>Last updated: 30/04/2022</h2>
-    </div>
-</body>
+</main>
 <div class="footer">
     <h2>Last updated: 28/05/2022</h2>
 </div>

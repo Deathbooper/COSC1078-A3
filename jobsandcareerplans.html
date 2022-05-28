@@ -1,96 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>COSC1078-A2</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
-<link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>COSC1078-A2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-black">
+        <div class="position-sticky">
+            <div class="list-group list-group-flush mx-3 mt-4">
+                <a href="index.html" class="list-group-item list-group-item-action " aria-current="true"><span>Home</span></a>
+                <a href="teamprofile.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Team Profile</span></a>
+                <a href="jobsandcareerplans.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Career Plans</span></a>
+                <a href="groupprocesses.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Group processes</span></a>
+                <a href="artifact.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Artefacts</span></a>
+                <a href="projectdescription.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Project description</span></a>
+                <a href="overview.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Overview</span></a>
+                <div class="dropdown">
+                    <a href="#more-detailed" class="list-group-item list-group-item-action "
+                       aria-current="true" data-mdb-toggle="collapse"><span>Detailed Description</span></a>
+                    <ul id="more-detailed" class="collapse list-group list-group-flush dropdown-toggle">
+                        <li class="list-group-item "><a href="detaileddescription.html#aim">Aims</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#plan">Plans and progress</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#role">Roles</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#scope">Scope and Limits</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#tools">Tools and technologies</a></li>
+                        <li class="list-group-item "><a href="detaileddescription.html#testing">Testing</a></li>
+                    </ul>
+                </div>
+                <a href="timeframe.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Time Frame</span></a>
+                <a href="reflection.html" class="list-group-item list-group-item-action "
+                   aria-current="true"><span>Reflections</span></a>
+                <a href="Tools.html" class="list-group-item list-group-item-action"
+                   aria-current="true"><span>Tools</span></a>
+            </div>
+        </div>
+    </nav>
 </head>
 <body>
-
-
-
-<div class="row-local">
-    <div class="side">
-        <div class="navbar"><br><br><br>
-            <a href="index.html">Home</a><br>
-            <a href="teamprofile.html">Team Profile</a><br>
-            <a class="current" href="jobsandcareerplans.html">Career Plans</a><br>
-            <a href="groupprocesses.html">Group processes</a><br>
-            <a href="artifact.html">Artefacts</a><br>
-            <a href="projectdescription.html">Project description</a><br>
-            <a href="overview.html">Overview</a><br>
-            <a href="detaileddescription.html">Detailed Description</a><br>
-            <a href="timeframe.html">Time Frame</a><br>
-            <a href="reflection.html">Reflections</a><br>
-            <a href="Tools.html">Tools</a><br>
-
-        </div>
+<main class="main">
+    <div class="container">
+        <h1>Ideal Jobs</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Position and Outline</th>
+                <th>Skills and Qualifications</th>
+                <th>Career Plan</th>
+            </tr>
+            <tr>
+                <th>Adrian</th>
+                <td>System Engineer/Administrator.<br><br>Manage and monitor all the infrastructure and installed systems of the company. Installation, configuration, testing, and maintenance of operating systems, system management tools and application software. Responsible for the security, backup and redundancy strategies for these systems. Other responsibilities include writing custom scripts for improving system efficiency, giving IT support to other staff and resolve IT related issues.</td>
+                <td>Experience with Azure and AWS with 3+ years of experience with dealing with Linux based environments and working with MySQL or other similar databases. Exposure to the administration and performance tuning of application stacks, PowerBI pro, data-warehousing and ETL. Experience with various things such as virtualization, containerization, monitoring systems, automation software, managing windows-based systems, managing MacOS desktop systems and experience with supporting staff with general IT issues along with troubleshooting 3rd party subscriptions.</td>
+                <td>Gain experience with Azure, AWS, Amazon CloudWatch, Rundeck, Jboss, PowerBI pro, data warehousing, ETL through available online courses. Gain experience with Linux, MySQL, Virtualization, Containerization, MacOS, Windows systems through internships, part time and full-time positions at tech companies.</td>
+            </tr>
+            <tr>
+                <th>Heath</th>
+                <td>(Junior) Software developer.<br><br>Working with customers to find out what they want created and to help them visualize and actualize the final product.</td>
+                <td>The skills required for this job are knowledge of multiple coding languages such as: TypeScript and C#, ReactJS, NodeJS, .NET Core, iOS/Android Java/Kotlin to name a few. Able to interview customers and decisively find out what they want from the system they are order.</td>
+                <td>Do university (in progress), find jobs that are similar however more guided as I am not going to be fully qualified without some type of apprenticeship (hence the junior software developer deal).</td>
+            </tr>
+            <tr>
+                <th>Lachlan</th>
+                <td>Service Desk Team Lead.<br><br>Managing a team of service desk analysts to troubleshoot and report tech issues, as well as be a point of contact for other team leads in other departments.</td>
+                <td>Tertiary degree in IT or a similar field, as well as experience with ITIL processes, G suite, multiple operating systems and cloud-based services. Several years of experience working with medium-scale service desk teams. A variety of interpersonal skills and the ability to work with a team in a leadership position. </td>
+                <td>Complete my bachelors of IT at RMIT, then enter the workforce aiming for a position as a service desk analyst. From there, gain the specific knowledge of systems required for the role and work to take on leadership positions within teams.</td>
+            </tr>
+            <tr>
+                <th>Shiou-Ping</th>
+                <td>Software Engineer (Java).<br><br>A leader of a software develop group who from structure design to final testing </td>
+                <td>A leading position in a sized Java-based software developing team which includes architect design and quality control. This role involved project managing and pipeline control</td>
+                <td>Complete degree and tried to find a entry level/intern software development position and slowly push up, also making some personal project and publish on GitHub as portfolio</td>
+            </tr>
+            <tr>
+                <th>Henry</th>
+                <td>Software developer.<br><br>Researching into new software ideas, designing and then creating the ideas in new and existing programs. </td>
+                <td>Analytic work approach, Good communication skills, Web application frameworks, HTML5 & CSS, Java, Git/ Bitbucket, Linux </td>
+                <td>Complete degree at RMIT. Have part time job relating to IT. Eventually acquire enough knowledge to be able to build software for companies and develop games</td>
+            </tr>
+            <tr>
+                <th>Ryan</th>
+                <td>Cyber Security Manager.<br><br>This role involves managing a cyber security department for a company to protect it’s business, data and certification. While avoiding any leakages or miscommunication of any company information.</td>
+                <td>3-4 years of management experience in a cyber security role, smaller companies. Tertiary Course completion in IT or Cyber Security. Leadership, responsibility, innovation, coordination and communication skills are required. Efficient problem-solving skills and educated decision making is also required.</td>
+                <td>Work part-time customer service, finish IT Degree. Hopefully complete masters, try get job at IT company or in the bank. Move into IT positions, get into security after couple years' experience. Attain certifications for manger and work/apply in security until I get the job.</td>
+            </tr>
+        </table>
+        <h2>Career Plans</h2>
+        <h3>Compare and contrast the career plans, including ideal jobs, for each person in the group. This may have changed due to
+            feedback from Assignments 1 and 2. What common elements are there, if any? What differentiates each position from the
+            others, if anything? How similar or different are your career plans across the group?  </h3>
+        <p>The majority of the group members included in their career plan that they would take up a part-time job after finishing their bachelor's degree that related to their desired field of IT to help build a good foundation of skills through these placements. This would also lead to differences between group members career plans regarding desired internship/apprenticeship/part-time work placements after completing their bachelor’s degree as they would be based on their ideal job’s required skills.  Adrian opted to find an internship/part-time position after university relating to databases and administration for building skills to be a systems administrator. Heath opted for an apprenticeship relating to software development for his ideal software development position.  Lachlan plans to enter the workforce aiming for a position as a service desk analyst to help prepare a foundation for becoming a service desk team lead. Shiou-ping will try to find an entry level software development position for skills relating to java software engineering. Henry aims to get a part-time position relating to building software for skills regarding his ideal software developer job.  Though there are other group members that plan to start gaining skills relating to their ideal job earlier and during their studies for the bachelor of IT such as Ryan who plans to work as a part-time customer service to help build skills to become a cyber security manager.  He also plans to try to get a position at an IT company or bank after completing his masters. While most group member’s career plans were mainly focused around acquiring skills need for their ideal job through work placements during and after their studies there were certain group members who also included other methods for acquiring skills. Adrian decided to include more individual and independent tasks such as gaining prospective ideal job skills through available online courses such as courses for AWS and Azure.
+            <br>
+        <p>The ideal jobs between group members were mostly different with the descriptions of each position including different tasks and responsibilities. Three of the group members opted for ideal jobs mainly relating to software engineering/software development, though these positions varied in terms of responsibilities and roles. Heath’s ideal job was for a junior software developer position that mainly consists of interaction with customers to visualize and create software to suit their needs. While Shiou-ping's ideal job was for a Java software engineer position that has less interaction with customers but rather more interaction with other software developers that he will be leading from the initial structure design to the final testing. Henry’s ideal job was for a software developer position that has a greater focus on the creative aspect of software development through researching, designing and creating/incorporating new ideas into existing or new programs. The other group members’ ideal jobs were less related to programming software. Adrian’s ideal job was for a system administrator/engineer position which has a greater focus on managing and monitoring the installed systems in the company. Lachlan’s ideal job was for a service desk team lead which described a job more focused on managing a team of desk analysts for troubleshooting and reporting tech issues as well as communication between other departments. Ryan’s ideal job was for cyber security manager position which had roles involving managing a cyber security department for protecting company data and certification. Based on the different tasks and responsibilities of ideal jobs between group members there would be differences relating to the skills and qualifications required for those jobs. Adrian’s idea job requires experience and skills with software relating managing and monitoring infrastructures and systems. Heath’s ideal job requires experience and skills relating to relating to programming such as knowledge of programming languages such as C# and Typescript. Similarly, Henry’s ideal job also requires programming language knowledge such as for HTML5 and Web application frameworks. Shiou-ping's ideal job also requires knowledge of programming languages such as Java. As Lachlan’s ideal jobs has a greater focus on management of team members skills that required are more focused on communication such as interpersonal and leadership skills. For Ryan as a manager of a security department leadership and communication skills are very important. Overall, the most common skills required by the group members’ ideal jobs were communication skills.
+        </p>
     </div>
-  <div class="main">
-  <h1>Ideal Jobs</h1>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Position and Outline</th>
-        <th>Skills and Qualifications</th>
-        <th>Career Plan</th>
-      </tr>
-      <tr>
-        <th>Adrian</th>
-        <td>System Engineer/Administrator.<br><br>Manage and monitor all the infrastructure and installed systems of the company. Installation, configuration, testing, and maintenance of operating systems, system management tools and application software. Responsible for the security, backup and redundancy strategies for these systems. Other responsibilities include writing custom scripts for improving system efficiency, giving IT support to other staff and resolve IT related issues.</td>
-        <td>Experience with Azure and AWS with 3+ years of experience with dealing with Linux based environments and working with MySQL or other similar databases. Exposure to the administration and performance tuning of application stacks, PowerBI pro, data-warehousing and ETL. Experience with various things such as virtualization, containerization, monitoring systems, automation software, managing windows-based systems, managing MacOS desktop systems and experience with supporting staff with general IT issues along with troubleshooting 3rd party subscriptions.</td>
-        <td>Gain experience with Azure, AWS, Amazon CloudWatch, Rundeck, Jboss, PowerBI pro, data warehousing, ETL through available online courses. Gain experience with Linux, MySQL, Virtualization, Containerization, MacOS, Windows systems through internships, part time and full-time positions at tech companies.</td>
-      </tr>
-      <tr>
-        <th>Heath</th>
-        <td>(Junior) Software developer.<br><br>Working with customers to find out what they want created and to help them visualize and actualize the final product.</td>
-        <td>The skills required for this job are knowledge of multiple coding languages such as: TypeScript and C#, ReactJS, NodeJS, .NET Core, iOS/Android Java/Kotlin to name a few. Able to interview customers and decisively find out what they want from the system they are order.</td>
-        <td>Do university (in progress), find jobs that are similar however more guided as I am not going to be fully qualified without some type of apprenticeship (hence the junior software developer deal).</td>
-      </tr>
-      <tr>
-        <th>Lachlan</th>
-        <td>Service Desk Team Lead.<br><br>Managing a team of service desk analysts to troubleshoot and report tech issues, as well as be a point of contact for other team leads in other departments.</td>
-        <td>Tertiary degree in IT or a similar field, as well as experience with ITIL processes, G suite, multiple operating systems and cloud-based services. Several years of experience working with medium-scale service desk teams. A variety of interpersonal skills and the ability to work with a team in a leadership position. </td>
-        <td>Complete my bachelors of IT at RMIT, then enter the workforce aiming for a position as a service desk analyst. From there, gain the specific knowledge of systems required for the role and work to take on leadership positions within teams.</td>
-      </tr>
-      <tr>
-        <th>Shiou-Ping</th>
-        <td>Software Engineer (Java).<br><br>A leader of a software develop group who from structure design to final testing </td>
-        <td>A leading position in a sized Java-based software developing team which includes architect design and quality control. This role involved project managing and pipeline control</td>
-        <td>Complete degree and tried to find a entry level/intern software development position and slowly push up, also making some personal project and publish on GitHub as portfolio</td>
-      </tr>
-      <tr>
-        <th>Henry</th>
-        <td>Software developer.<br><br>Researching into new software ideas, designing and then creating the ideas in new and existing programs. </td>
-        <td>Analytic work approach, Good communication skills, Web application frameworks, HTML5 & CSS, Java, Git/ Bitbucket, Linux </td>
-        <td>Complete degree at RMIT. Have part time job relating to IT. Eventually acquire enough knowledge to be able to build software for companies and develop games</td>
-      </tr>
-      <tr>
-        <th>Ryan</th>
-        <td>Cyber Security Manager.<br><br>This role involves managing a cyber security department for a company to protect it’s business, data and certification. While avoiding any leakages or miscommunication of any company information.</td>
-        <td>3-4 years of management experience in a cyber security role, smaller companies. Tertiary Course completion in IT or Cyber Security. Leadership, responsibility, innovation, coordination and communication skills are required. Efficient problem-solving skills and educated decision making is also required.</td>
-        <td>Work part-time customer service, finish IT Degree. Hopefully complete masters, try get job at IT company or in the bank. Move into IT positions, get into security after couple years' experience. Attain certifications for manger and work/apply in security until I get the job.</td>
-      </tr>
-    </table>
-    <h2>Career Plans</h2>
-    <h3>Compare and contrast the career plans, including ideal jobs, for each person in the group. This may have changed due to
-feedback from Assignments 1 and 2. What common elements are there, if any? What differentiates each position from the
-others, if anything? How similar or different are your career plans across the group?  </h3>
-    <p>The majority of the group members included in their career plan that they would take up a part-time job after finishing their bachelor's degree that related to their desired field of IT to help build a good foundation of skills through these placements. This would also lead to differences between group members career plans regarding desired internship/apprenticeship/part-time work placements after completing their bachelor’s degree as they would be based on their ideal job’s required skills.  Adrian opted to find an internship/part-time position after university relating to databases and administration for building skills to be a systems administrator. Heath opted for an apprenticeship relating to software development for his ideal software development position.  Lachlan plans to enter the workforce aiming for a position as a service desk analyst to help prepare a foundation for becoming a service desk team lead. Shiou-ping will try to find an entry level software development position for skills relating to java software engineering. Henry aims to get a part-time position relating to building software for skills regarding his ideal software developer job.  Though there are other group members that plan to start gaining skills relating to their ideal job earlier and during their studies for the bachelor of IT such as Ryan who plans to work as a part-time customer service to help build skills to become a cyber security manager.  He also plans to try to get a position at an IT company or bank after completing his masters. While most group member’s career plans were mainly focused around acquiring skills need for their ideal job through work placements during and after their studies there were certain group members who also included other methods for acquiring skills. Adrian decided to include more individual and independent tasks such as gaining prospective ideal job skills through available online courses such as courses for AWS and Azure.
-    <br>
-    <p>The ideal jobs between group members were mostly different with the descriptions of each position including different tasks and responsibilities. Three of the group members opted for ideal jobs mainly relating to software engineering/software development, though these positions varied in terms of responsibilities and roles. Heath’s ideal job was for a junior software developer position that mainly consists of interaction with customers to visualize and create software to suit their needs. While Shiou-ping's ideal job was for a Java software engineer position that has less interaction with customers but rather more interaction with other software developers that he will be leading from the initial structure design to the final testing. Henry’s ideal job was for a software developer position that has a greater focus on the creative aspect of software development through researching, designing and creating/incorporating new ideas into existing or new programs. The other group members’ ideal jobs were less related to programming software. Adrian’s ideal job was for a system administrator/engineer position which has a greater focus on managing and monitoring the installed systems in the company. Lachlan’s ideal job was for a service desk team lead which described a job more focused on managing a team of desk analysts for troubleshooting and reporting tech issues as well as communication between other departments. Ryan’s ideal job was for cyber security manager position which had roles involving managing a cyber security department for protecting company data and certification. Based on the different tasks and responsibilities of ideal jobs between group members there would be differences relating to the skills and qualifications required for those jobs. Adrian’s idea job requires experience and skills with software relating managing and monitoring infrastructures and systems. Heath’s ideal job requires experience and skills relating to relating to programming such as knowledge of programming languages such as C# and Typescript. Similarly, Henry’s ideal job also requires programming language knowledge such as for HTML5 and Web application frameworks. Shiou-ping's ideal job also requires knowledge of programming languages such as Java. As Lachlan’s ideal jobs has a greater focus on management of team members skills that required are more focused on communication such as interpersonal and leadership skills. For Ryan as a manager of a security department leadership and communication skills are very important. Overall, the most common skills required by the group members’ ideal jobs were communication skills.
-    </p>
-  </div>
-</div>
+</main>
 <div class="footer">
-  <h2>Last updated: 30/04/2022</h2>
+  <h2>Last updated: 28/05/2022</h2>
 </div>
 </body>
 </html>
