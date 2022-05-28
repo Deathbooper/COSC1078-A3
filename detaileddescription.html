@@ -9,8 +9,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 </style>
-<link href="styles.css" rel="stylesheet" type="text/css" />
-<script></script>
+  <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="dropdown.js"></script>
 </head>
 <body>
 
@@ -26,7 +29,7 @@ body {
       <a href="artifact.html">Artefacts</a><br>
       <a href="projectdescription.html">Project description</a><br>
       <a href="overview.html">Overview</a><br>
-      <a class="current" href="detaileddescription.html">Detailed Description</a><br>
+      <a class="current dropdown" href="detaileddescription.html">Detailed Description</a><br>
       <a href="timeframe.html">Time Frame</a><br>
       <a href="reflection.html">Reflections</a><br>
       <a href="Tools.html">Tools</a><br>
@@ -34,48 +37,201 @@ body {
   </div>
   <div class="main">
     <h1>Detailed Description - IT Project - MARPS</h1>
-    <div>
-      <h1>Aims:</h1>
-      <p>The goal: The goal for MARPS is to be able to direct RMIT users from building 8/08 elevator to room 82.</p>
-    </div>
-    <div>
-      <h2>Overarching aim:</h2>
-      <p>The aim for the creation of MARPS is to be able to direct a user around a room using AR technology on a phone. MARPS will show the user a line on their screen using their camera to direct them around the room to different pre-selected points. It Shall also inform the user of and present dangers. The result will be a completed prototype that proves the concept of a full-scale AR map for the internal of buildings. In order to achieve the successful completion of MARPS there has to be aims set, they are as follows:</p>
-      <li><p>The first sub-aim is to complete research into different tools and technologies that are readily available that will allow for the map to be produced and created. Thorough research will have to be done here to ensure that the project will succeed. Without this step the project will never be able to get off the ground. A backup plan has been put in place for if this step is completed but no program can be found that will allow us to produce what we are looking for. (Backup plan 1.1)</p></li>
-      <li><p>The second sub-aim is to take the technology that has been decided and found and to implement it to an experiment, the experiment will be to scan a small area and test to see if the program will work. Through doing this it will teach us how to use the program and how it reacts to the physical environment, and in return it will allow for a higher quality product to be produced. Should the aim of this step fail to be completed backup plan 1.2 will be implemented.</p></li>
-      <li><p>The third sub-aim is to then start the production of MARPS, a scan will be done of the area and will be completed and uploaded to ARWAY. The aim will be to have an online environment that is the same scale as the physical environment. Should a problem occur with this step backup plan 1.3 will be implemented.</p></li>
-      <li><p>The fourth sub-aim is to transfer the scanned data into unity and mockup the environment. This aim will be to create the online environment that the user will not see. A detailed breakdown for how this will be done can be found in the plans/progress section. This step is one of the most important steps out of all of them due to it being a critical step to mapping the scannable area. Should this step fail final backup plan will be implemented.</p></li>
-      <li><p>The fifth sub-aim is to reupload the environment from unity into ARWAY and start production on the interface to select points of interest. This step is what the user will see, more details on this will be located in the plans and progress section. The importance of this aim is so that the users will have something to be able to click on to navigate. Should this step fail Final backup plan will be implemented.</p></li>
-      <li><p>The sixth sub-aim is to finalize MARPS and test to ensure the product will work. This is the most crucial step in the production process as it is important that the product will complete the goal that was set, the goals for a successful product can be seen below. If this step fails Final backup plan will be implemented. </p></li>
-    </div>
-    <div>
-      <h2>Finished product goals:</h2>
-      <li><p>Display the path on a phone screen using the camera to navigate around a room.</p></li>
-      <li><p>Be easy to understand and use for new users</p></li>
-      <li><p>Successfully arrive at the user specified location within the room</p></li>
-      <li><p>Show structural dangers whilst navigating through the room</p></li>
-      <li><p>Show an emergency escape route to leave the room</p></li>
-    </div>
-    <div>
-      <h2>Backup plan 1.1:</h2>
-      <p>Should the plan fail to find an application that will allow us to produce an AR map that is of a high standard, we will just create a proof of concept mockup, steps 2,4 and 5 will be skipped and will move straight onto step 6. Should this backup plan fail to be achieved then the project will skimpily not be made up. </p>
-    </div>
-    <div>
-      <h2>Backup plan 1.2:</h2>
-      <p>Should we fail to be able to test the program we will seek help from experienced users of the product. This will allow us to better understand the program. Alternatively, if no help can be found we will move back to step 1 and find a new program that could be used. Should this fail backup plan 1.1 will be implemented.</p>
-    </div>
-    <div>
-      <h2>Backup plan 1.3:</h2>
-      <p>Should we fail to be able to scan the physical environment, we will try to find another application that can do it for us, or we will physically make the outline on unity and then re upload it to the program. Should any other errors occur we will attempt to seek help from experts to try and solve the problem or we will move onto a figma mockup similar to backup plan 1.1.</p>
-    </div>
-    <div>
-      <h2>Final backup plan:</h2>
-      <p>The final backup plan is if everything is not going to plan and we are running out of time we will focus all of our attention to the figma mockup. This will allow us to have an artifact to present when presentations come up. </p>
-    </div>
+    <section id="aim">
+      <div>
+        <h2>Aims</h2>
+        <p>The goal: The goal for MARPS is to be able to direct RMIT users from building 8/08 elevator to room 82.</p>
+      </div>
+      <div>
+        <h2>Overarching aim</h2>
+        <p>The aim for the creation of MARPS is to be able to direct a user around a room using AR technology on a phone. MARPS will show the user a line on their screen using their camera to direct them around the room to different pre-selected points. It Shall also inform the user of and present dangers. The result will be a completed prototype that proves the concept of a full-scale AR map for the internal of buildings. In order to achieve the successful completion of MARPS there has to be aims set, they are as follows:</p>
+        <li><p>The first sub-aim is to complete research into different tools and technologies that are readily available that will allow for the map to be produced and created. Thorough research will have to be done here to ensure that the project will succeed. Without this step the project will never be able to get off the ground. A backup plan has been put in place for if this step is completed but no program can be found that will allow us to produce what we are looking for. (Backup plan 1.1)</p></li>
+        <li><p>The second sub-aim is to take the technology that has been decided and found and to implement it to an experiment, the experiment will be to scan a small area and test to see if the program will work. Through doing this it will teach us how to use the program and how it reacts to the physical environment, and in return it will allow for a higher quality product to be produced. Should the aim of this step fail to be completed backup plan 1.2 will be implemented.</p></li>
+        <li><p>The third sub-aim is to then start the production of MARPS, a scan will be done of the area and will be completed and uploaded to ARWAY. The aim will be to have an online environment that is the same scale as the physical environment. Should a problem occur with this step backup plan 1.3 will be implemented.</p></li>
+        <li><p>The fourth sub-aim is to transfer the scanned data into unity and mockup the environment. This aim will be to create the online environment that the user will not see. A detailed breakdown for how this will be done can be found in the plans/progress section. This step is one of the most important steps out of all of them due to it being a critical step to mapping the scannable area. Should this step fail final backup plan will be implemented.</p></li>
+        <li><p>The fifth sub-aim is to reupload the environment from unity into ARWAY and start production on the interface to select points of interest. This step is what the user will see, more details on this will be located in the plans and progress section. The importance of this aim is so that the users will have something to be able to click on to navigate. Should this step fail Final backup plan will be implemented.</p></li>
+        <li><p>The sixth sub-aim is to finalize MARPS and test to ensure the product will work. This is the most crucial step in the production process as it is important that the product will complete the goal that was set, the goals for a successful product can be seen below. If this step fails Final backup plan will be implemented. </p></li>
+      </div>
+      <div>
+        <h2>Finished product goals:</h2>
+        <li><p>Display the path on a phone screen using the camera to navigate around a room.</p></li>
+        <li><p>Be easy to understand and use for new users</p></li>
+        <li><p>Successfully arrive at the user specified location within the room</p></li>
+        <li><p>Show structural dangers whilst navigating through the room</p></li>
+        <li><p>Show an emergency escape route to leave the room</p></li>
+      </div>
+      <div>
+        <h2>Backup plan 1.1:</h2>
+        <p>Should the plan fail to find an application that will allow us to produce an AR map that is of a high standard, we will just create a proof of concept mockup, steps 2,4 and 5 will be skipped and will move straight onto step 6. Should this backup plan fail to be achieved then the project will skimpily not be made up. </p>
+      </div>
+      <div>
+        <h2>Backup plan 1.2:</h2>
+        <p>Should we fail to be able to test the program we will seek help from experienced users of the product. This will allow us to better understand the program. Alternatively, if no help can be found we will move back to step 1 and find a new program that could be used. Should this fail backup plan 1.1 will be implemented.</p>
+      </div>
+      <div>
+        <h2>Backup plan 1.3:</h2>
+        <p>Should we fail to be able to scan the physical environment, we will try to find another application that can do it for us, or we will physically make the outline on unity and then re upload it to the program. Should any other errors occur we will attempt to seek help from experts to try and solve the problem or we will move onto a figma mockup similar to backup plan 1.1.</p>
+      </div>
+      <div>
+        <h2>Final backup plan:</h2>
+        <p>The final backup plan is if everything is not going to plan and we are running out of time we will focus all of our attention to the figma mockup. This will allow us to have an artifact to present when presentations come up. </p>
+      </div>
+    </section>
+    <section id="plan">
+      <div>
+        <h1>Plans and progress</h1>
+      </div>
+      <div>
+        <h2>Brief history of the project</h2>
+        <p>Initially the project idea came from Henry Norman’s assignment 1, which was an outline of an AR map that would allow RMIT students and staff to navigate around the RMIT buildings. The motivation for Henry to decide this project was that he felt that he saw a lot of RMIT students become lost when navigating around RMIT. Because of this reason MARPS was born. When deciding in assignment 2 for which project should be continued, we came up with 2 main ideas one which was the AR map and the other being a music marketplace. Due to the amount of research already done and general group interest the AR map was chosen to be continued. Since assignment 1, the progress of MARPS has dramatically picked up in pace. During assignment 2 general research was done into what technologies could be used to create a functional program that would meet the project goals. Large decisions were made when selecting the right program to use as there was a wide range available. ARWAY was selected to be used as it provided a set of tools that are easy to use that other program did not offer. Now in assignment 3 the tools which will/have been used are in finalization and the product is well on its way. There was a decision that was made in assignment 3 that slightly altered the goal of the project, The goal was shifted from directing a user from ground floor to building 08/8/82 to just navigating within room 82. This decision was made due to time constraints and workloads. At the current moment 18/05/2022 we are in step 2 of the Overarching aim. A more detailed breakdown of the progress and plan is below.</p>
+      </div>
+      <div>
+        <h2>Brief history of the project</h2>
+        <div>Initially the project idea came from Henry Norman’s assignment 1, which was an outline of an AR map that would allow RMIT students and staff to navigate around the RMIT buildings. The motivation for Henry to decide this project was that he felt that he saw a lot of RMIT students become lost when navigating around RMIT. Because of this reason MARPS was born. When deciding in assignment 2 for which project should be continued, we came up with 2 main ideas one which was the AR map and the other being a music marketplace. Due to the amount of research already done and general group interest the AR map was chosen to be continued. Since assignment 1, the progress of MARPS has dramatically picked up in pace. During assignment 2 general research was done into what technologies could be used to create a functional program that would meet the project goals. Large decisions were made when selecting the right program to use as there was a wide range available. ARWAY was selected to be used as it provided a set of tools that are easy to use that other program did not offer. Now in assignment 3 the tools which will/have been used are in finalization and the product is well on its way. There was a decision that was made in assignment 3 that slightly altered the goal of the project, The goal was shifted from directing a user from ground floor to building 08/8/82 to just navigating within room 82. This decision was made due to time constraints and workloads. At the current moment 18/05/2022 we are in step 2 of the Overarching aim. A more detailed breakdown of the progress and plan is below.</div>
+      </div>
+      <div>
+        <h2>Plan Summary:</h2>
+        <p>The initial stage of the project took place during previous assessments, being the initial research requirements into augmented reality and other related technologies. From this research, we were then able to make decisions on what programs would be used, with us settling on a combination of ARWAY and Unity as our primary tools. This then leads us into assessment 3, where the bulk of the production work will take place. Once assessment 3 has begun, the work on producing an initial prototype will begin after an initial week of report writing and researching, in order to give us more time to focus purely on the artifact production element. Once this has begun, the first step is to take a scan of an area, likely our tutorial room and surrounding hallways, as an initial test area. Whilst this is happening, a mock-up of the app's design will also be taking place, using Figma or a similar tool. The results of the scan will then be imported into Unity, to be made into an object suitable for our purposes. This object can then be exported into our prototype app, allowing us to create and test the user interface and pathfinding functions. This prototype is to be tested on our phones, in order to fine tune it for actual use and marking once handed in for this assessment.</p>
+      </div>
+      <div>
+        <h2>What we plan for our project to do</h2>
+        <p>Our overall aim for this project is to create a pathfinding application that will act as an internal map for buildings, to aid people with finding their desired rooms within larger buildings, such as RMIT’s buildings. Our immediate aim is to achieve this for a specific part of one RMIT building, as proof of concept and to ensure our program works before expanding to cover a larger area. We decided to focus on this initial portion to allow us to make full use of our given timeframe to create as high quality of a prototype as we can, rather than cover a larger scope with a much rougher application. Using this initial aim, we have decided on several criteria to complete for us to deem the prototype a success, those being the display of a pathway to a specific room (08.08.82 of RMIT) from various points within a set area, the application itself being easy to understand and use, the application notifying users of potential obstacles along the way such as maintenance, and a way to show emergency escape routes from the user’s location. These criteria were picked for a couple of reasons, being that these features are all implementable within our chosen area, and that they are all relevant features for the broader application once the scope is expanded.</p>
+      </div>
+      <div>
+        <h3>How we plan to do it</h3>
+        <p>The initial plan to achieve these goals is to use ARWAY and Unity to create and visualise a map for the user. ARWAY works by taking a scan of an area through a camera and generating key points within the scanned structure. Once we have a scan of an area within building 8 of RMIT, we can then import this scan into Unity in order to visualize it and map the area out for the user. This 3d map will then be shown to the user through the application. The application end of the prototype will be created using Unity, in order to create a user interface with various functions.
+          ARWAY makes use of a mapping application to create point cloud maps that are then stored on their cloud servers. The map is created by marking key points and features of the area being mapped, with a larger number of objects and distinct features being marked resulting in a more detailed and useful map. This point cloud data can then be imported into their web studio. This allows developers to flesh out the map with objects, floorplans and other assets to create a full 3D environment. If multiple point cloud maps are created for one area, they can also be arranged in their proper layout in this studio as well. Additionally, maps can be updated live from this studio, even while users are connected to them. This will allow for live troubleshooting and bug fixing. From here, a user can connect to these maps through our application, which will use the data from their camera feed to determine their location and direction within the mapped area. Our application will then display a pathway along the ground for the user to follow towards their input destination.
+          Unity serves as a game engine and tool to create online environments, applications and assets if needed. ARWAY provides an SDK (software development kit) that can be imported into Unity as a package, allowing us to work with environments and maps for navigation and localisation. Unity will allow us to create 3D objects to match our point cloud maps, such as creating 3D rooms, furniture and other key features within the map. These can then be saved as .GLB files to be imported into ARWAY’s web suite and used to create a full 3D environment.
+        </p>
+      </div>
+      <div>
+        <h3>Progress</h3>
+        <div>
+          <h4>Pre-assignment 3</h4>
+          <p>Prior to the first official week of this assessment, we spent time planning out our tools and technical requirements for the project based on our current knowledge, as well as began to plan out solutions to issues that arose during assessment 2. This period was mostly spent organising and refining our communication methods and work allocation, as well as some initial research into ARWAY and Unity and our planned use of them.</p>
+        </div>
+        <div>
+          <h4>Week 1</h4>
+          <p>This first week was comprised of task allocation, planning and report writing. We decided during the first meeting that getting the report mostly complete within the first two weeks would be optimal and allow us a larger amount of time to create prototypes and perform testing, whilst also creating the website aspect of the assessment. The specific elements of the report that were completed during this first week were the group processes, group processes and communication, tools and overview. This served as a good foundation for the report, as we analysed the methods in which our group both had and would communicate, as well as outlined our project overview and created a list of initial tools that we planned to use. Additionally, we created our group Trello board during this week and sorted out how we would use it, as well as began the notation of our meeting agendas and actions.</p>
+        </div>
+        <div>
+          <h4>Week 2</h4>
+          <p>The second week was similar to our first week, as it mostly consisted of completing the report elements of the assessment. We completed most of the longer elements of the report, mainly the career and ideal jobs section, the scope and limits of the project, project description and risks. Additionally, more content was added to group processes and communications, and tools. We also began some of the initial project creation and testing, trying out methods of creating floor plans. We planned to find a method of creating floorplans to work together with the ARWAY mapping application, as physically measuring and drawing the floorplan by hand would take too long. Several applications were tested, these being Roomscan LiDAR, Roomscan Pro, and Polycam LiDAR and 3D Scanner, but these proved ineffective as they all requested a monthly subscription. As our budget for the project was $0, these were off the table.</p>
+        </div>
+        <div>
+          <h4>Week 3</h4>
+          <p>With the majority of the report completed by this week, we began to create the project artifacts and prototypes in earnest. This week we unfortunately discovered that ARWAY’s mapping application had been taken down of the app store, with no reason given in their documentation. This left us in an inconvenient spot, as we now had to find a way to create maps using ARWAY’s web suite, without the use of their point cloud mapping. However, we had found an application to create floorplans that did not require a subscription or any payment, that also was able to create 3D objects from floorplans as well as add assets such as furniture and key features. This would not only result in saving us time in Unity, but also gave us a potential way to create maps without the point cloud mapping. We now had to learn how to use ARWAY’s web suite to fill in some of the features manually, which proved to be time consuming as their documentation is not the clearest when it comes to product use.
+            The final elements of the report that were completed this week were team roles, plans, current progress and aims. Additionally, the skills and jobs section was completed, though several group members had to step in to complete this section. Our website and repository was created this week, as we now had enough of the report completed to begin transferring content over to it. Finally, as we now had a way to create usable floorplans and assets for use with ARWAY, we used magicplan to create two floorplans, a floorplan of one member’s home for initial testing purposes, and once we were able to meet at our tutorial room, a floorplan of 08.08.82 of RMIT and the surrounding areas. This gave us an initial area to map out and create navigation to suit our current scope.
+          </p>
+        </div>
+        <div>
+          <h4>Week 4</h4>
+          <p>With our final week we primarily worked on technical elements of the project as well as editing and putting together the final report. Figma was used to create wireframes and a mockup of our application, and ARWAY’s web suite was used to create functional floorplans. A lot of time was spent during this week learning and researching how to make use of the remaining ARWAY developer tools, now that they had removed their mapping application, which a lot of their functionality had relied upon. Eventually we learnt how to add the required navigational features to our floorplans and models, though this is only theoretically achieved for now as we have not yet tested it through accessing the map with a functional app. Additionally, we also spent time researching the use of their Unity SDK and its uses, and how to use this to create and work with the other ARWAY tools.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Challenges faced</h2>
+        <div>
+          <h3>Week 1</h3>
+          <li><p>During this week we faced the challenge of ensuring that group members would achieve the work that they had been set. The issue that had arisen from assignment 2 regarding contribution was resolved during this week.</p></li>
+        </div>
+        <div>
+          <h3>Week 2</h3>
+          <li><p>During this week Ryan completed the work that the rest of the team asked him to do, meaning that he was going to stay on the team. However, this resulted in a reallocation of work for all the other team members, tasking everyone with another work delegation phase before we could really start getting some work done.</p></li>
+        </div>
+        <div>
+          <h3>Week 3</h3>
+          <li><p>During this week we found that ARWAY had taken down their mapping app and had replaced it with a web suite for map creation instead. This web suite is much more complex to use than their previous mapping application and it is not particularly clear how to use its features.</p></li>
+          <li><p>2-	This week also saw a pressing concern regarding work that had been completed by Shiou Ping, Anthony was consulted, and the issues were resolved to a satisfactory extent.</p></li>
+        </div>
+        <div>
+          <h3>Week 4</h3>
+          <li><p>1-	Learning how to use ARWAY as well as its integration with Unity proved to take more time than expected, so creating a functional map with the required navigation tools and waypoints took some time. Once the map was believed to be functional, we were still unable to test it as we did not have a functional app to connect to the map and navigate with it.</p></li>
+        </div>
+      </div>
+    </section>
+    <section id="role">
+      <div><h1>Roles: (Work split to be in here)</h1></div>
+      <div>
+        <p>
+          We have not defined any specific roles for each group member. The way that our group has decided to assign roles would be that in the first week of the assignment we would assign specific tasks to each group member that they would need to complete. We have attempted to evenly spread these tasks among group members so that each group member will have equal contribution.
+          These tasks assigned to each group member may not be all part of the same category such needing to design the UI of the app and writing up part of the report, therefore no specific roles can be assigned to each group member. This therefore allows more freedom for group members to choose what tasks they want to be responsible for completing as the tasks can cover a range of areas rather than just one specific role. The assignment of specific tasks and responsibilities instead of broad roles like “Technical Designer” lets each group member know exactly what tasks they need to complete and when they need to complete them so that there is no room for confusion of who does what.
+          We use a Trello board to set out all the tasks that need to be completed and it lets other group member to know what tasks each group member is working on or has completed so that if a group member needs to wait for the completion of another task by another group member before completing their task, they can check Trello for progression before inquiring about it with that group member.
+          On the Trello board we placed tasks into the to do section for task that still need completing, we placed tasks in the doing section for tasks that we were currently working on, and we placed tasks in the done section for tasks that have the writing completed. There is also and editing and compile/finished section for tasks that are being proofread and improved.
+          We used different colours on each task to represent which group member/s are responsible for completing that task. Henry was green and was responsible for the project description, aim, plans and creating the Trello board. Adrian was red and was responsible for group processes, career plans and ideal jobs comparison, roles and the wireframes along with the Figma mockup. Lachlan was blue and was responsible for plans, group processes and communications, timeframe and website. Ryan was purple and was responsible for overview, risks, skills and jobs, final report and summary group reflection. Heath was yellow and was responsible for tools section, scope and limits and website along with skills and jobs. Shiou-ping was orange and was responsible for website, skills and jobs section and the tools and technology section.
+          For tasks that all group members needed to do were given a dark blue colour. These tasks were team profile, testing, progress, timeframe, app creation, group reflection and Spark Plus.
+        </p>
+      </div>
+    </section>
+    <section id="scope">
+      <div><h1>Scope and Limits</h1></div>
+      <div>
+        <h2>The scope of this project will include at least</h2>
+        <p>An app that can function as a camera and scan the area around it to create a virtual space that can be accessed by separate programs to modify the camera's output based upon the input. An example would be to take a live picture, have the phone take measurements from the camera to the walls, floor and ceiling of the room using something like LIDAR, and to change the picture output of the camera to something else based off the input that the phone is receiving, not just sticking some random picture on the screen every time a scan is done.
+          The alterations of the camera output should be focused on navigation to a specific point, either pre-determined or found through user input. This alteration should come in the form of an arrow, line or something similar leading the user on a feasible path from the starting point to the destination in a single room.
+          The app / program should be at least somewhat usable, perhaps not perfectly clean and polished, but it should be useable without herculean levels of excise tax used to figure it out.
+          The scope of this project could include:
+          Compatibility with more than a single room, this could go up to the whole of RMIT, or perhaps other buildings / places as well.
+          A clean and intuitive look and flow of the app / program, so that all but the technologically illiterate would be able to pick it up and, using already learnt tech-literacy as to use as little excise as possible, be use it for the first time with little hassle.
+          A feature that includes a line for emergency exits, this would be an option the user could select that would navigate them from wherever they are to the nearest emergency exit or emergency gathering location. This would be from the user's position to the nearest set destination (the emergency exit / gathering point.)
+          A feature that includes pathways for the mobility impaired, such as people with wheelchairs. This would be a line very similar to the regular, however depending on the terrain may select a longer, but more accessible path that allows for wheelchair (or something similar) access. Think of it as instead of travelling 50 meters by taking the stairs to the destination, take the 100-meter path that uses an elevator for vertical travel to reach the destination.
+          The scope of this project will not include:
+          A feature that includes structural dangers in the building, or perhaps warnings of potential hazards. Dangers and hazards like slippery floors all the way up to rooms that cannot be exited or potential lethal hazards.
+        </p>
+      </div>
+    </section>
+    <section id="tools">
+      <div><h1>Tools and technologies</h1></div>
+      <div><p>During our research stage we determined that to create a in building navigation we first build a model of the building, we considered using AutoCAD for floor plan and import into game engine of sort. For precise in-door locating we use WIFI to locate the floor and approximate position (this also require some cooperation from the building manager), and user will move around their phone until the structure match the building data (this might require some degree of machine learning hopefully WIFI triangulation can shrink down the search area). After lock on user's location our navigation map can provide HUD for path finding</p></div>
+      <div>
+        <h3>Additional research</h3>
+        <p>One of the arguments is the method of making interior structure, the solution can if either scan the whole interior with exists AR apps and transform it into 3D model or take a photocopy of floor plan that usually put around the building and draw a CAD from there.
+          During our prototype stage we used Figma for the wireframe and mockup design, this will give us a quick look at what our final product will look like for users and flow chart for UI element and where they lead to when interact. We used the ARCore 3D drawing tool on android to create rough concept videos of what the path finding on the app will look like to display on the Figma prototype.
+          Because our medium is smart phone that either run Android or iOS, both systems provide API for AR applications (AR Core for Android and ARKit for iOS)
+          These are the core APIs for the respect mobile OS, both have integrated support from AR Foundation, simplified the use of device built-in sensor like gyroscope to draw the plane and tracking user's movement. Newer iPhones ARKit utilize LiDAR for surface calculation, which is more accurate than calibrate through moving camera around (Apple, 2022).
+          To present a UI that meets the industry standard, we need Adobe Illustrator and Photoshop to create UI element.
+          For iOS development, Apple's XCode would be an optimal choice, especially for apps relies on Apple's native Metal graphic API. AS for android XDA any IDE would work but from personal experience JetBrains’ IntelliJ and its derivatives work best in my personal experience.
+          Our choice of developing platform would be Mac PC since iOS app can only be developed and published in MacOS.
+          In practice we found other tools and method to develop our project within short time frame. For our UI design we use Figmga for high resolution wireframe and prototype, it’s a web-based application to create interactive story board, this gives our software steam a better idea on what our final product will look like. As our core engine we use ARWAY to develop our main app. ARAWAY is a code-free cloud development platform specializing in AR map applications, this including device triangulation and navigation, saves us time on researching how to utilize mobile sensor and complex algorithm on matching real-world structure and 3d data, at this stage we primarily use ARWayKit Unity Package
+          To import 3d model to Unity (2019.4.36). Finally, to acquire 3d interior structure we opted to Magicplan (ver. 2022.5.0), an AR mobile app for room measurement and room scanning, with Magicplan we can recreate the building structure into standard 3d model file that can be used in ARWAY
+        </p>
+      </div>
+    </section>
+    <section id="testing">
+      <div><h1>Testing</h1></div>
+      <div>
+        <h2>Alternative 3d floorplan scan tools</h2>
+        <p>A group member recommended RoomScan LiDAR for getting floor plans for the ARWAY app as it is required floor plans for the pathfinding. The app was supposed to scan rooms and use machine learning with LiDAR scanning to measure and place symbols that can represent doors, windows, symbols on floor plans created from scratch. However, for proper compatibility with the app, an iPhone 12 pro was required, and the group member who was supposed to use the app did not have an iPhone 12 pro, so they needed to scan the rooms manually. After creating a room scan for the first time and attempting to create another room scan there was a pop up that prevented usage until there was payment made so the group was unable to use the application for scanning further floor plans.
+          Similar apps were tested afterwards, these being Roomscan Pro and Polycam LiDAR and 3D Scanner, but these suffered from the same issue of requesting a quite pricey subscription for use. Eventually an application was found that had a proper free version, and not just a one-off test. The Magicplan app allows users to create up to two projects on its free version, which suits our purposes for this testing phase. It functions by using the user’s phone camera to place points in the corners of rooms to build a floor plan, then the user sets the height of the room, then finally places objects such as doors and furniture. From this the application creates a 3D object that can be exported as an .obj file, for use in Unity.
+        </p>
+      </div>
+      <div>
+        <h2>ARWAY testing</h2>
+        <p>ARWAY proved to be quite a time sink when it came to map creation and testing, and currently we are unable to test whether the navigation aspect of the map is implemented correctly as we do not have an application to connect to it with. The intended outcome of the map aspect of ARWAY is that a user will be able to connect to the map from their application, which will then pull the camera feed from their phone and locate them within the mapped area, then guide them to their selected waypoint. Our maps currently have navigation paths, waypoints and several key features of the area, but we do not currently have a method to test its functionality. ARWAY’s developer documentation unfortunately does not make it overly clear as to how to actually create an application to connect to the map, so once we have learnt how to create this application, we will be able to conduct some proper testing of our maps. If our maps as they currently are do not function properly, the web suite allows for maps to be updated live, so this should allow for needed changes to be rolled out rapidly. We will know we have succeeded with our maps when they are able to successfully identify the location of the user within the RMIT Building 8 Floor 8 area, and navigate them to room 82. Once this has been achieved, we can then expand to the rest of the floor, and then move further from there.</p>
+      </div>
+      <div>
+        <h2>Unity Testing</h2>
+        <li><p>Unity is a game engine that Is primarily for making games but can serve as a tool to make online environments. </p></li>
+        <li><p>We started by importing a unity SDK from ARWAY as a package to the unity editor </p></li>
+        <li><p>We then uploaded an .obj file to unity as a game asset, this allowed us to physically work the floor plan to our liking</p></li>
+        <li><p>The same would be done for uploading the ARWAY scan, to export it would then be saved as another .obj file and reuploaded to ARWAY where the interface would be developed on the web browser.</p></li>
+        <li><p>To test the initial ARWAY and floor plans we had to install unity 2019</p></li>
+      </div>
+      <div>
+        <h2>Figma mockup</h2>
+        <p>
+          The group looked at ways to represent the prototype for the app regarding UI and UX. The group came across a website called Figma which is a vector graphics editor and prototyping tool. This website allowed the creation of a mockup mobile app for iOS that allowed real-time viewing and UI operation of the app. Due to previous experience with Figma from the group’s UCD course which also had them design and develop and app, Figma was the first choice for prototyping an app UI.
+          A group member who was responsible for creating the Figma mockup created multiple pages with the layout and dimensions of an iPhone 13 pro max to use as a template for the MARPS application. They then created a splash screen for the application using time delayed transitions to mimic a conventional mobile application.
+          As the MARPS application was specifically for navigating through RMIT using AR technology it was important to include a login screen so that only authorized personnel would be able to use the app to navigate RMIT.
+          A menu was created which contained three clickable buttons each of which represented a specific feature of the app such as AR room finder, AR emergency exit finder and an AR room finder for disabled people. Through using the built-in wireframes in Figma they linked each of these buttons to separate pages. In the AR room finder and AR disabled room finder page entry boxes were placed for users to input their desired building, floor and room. In the emergency exit finder, the user would be able to input their building and floor.
+          Each of these input pages had a navigate button placed at the button which would be linked to the AR display page which had a gif concept of how the user would navigate using the application for find either a room or emergency exit. Back buttons were also placed on each page to allow users to go back to previous pages.
+        </p>
+      </div>
+    </section>
   </div>
 </div>
-<div class="footer">
-  <h2>Last updated: 30/04/2022</h2>
-</div>
 </body>
+<div class="footer">
+  <h2>Last updated: 28/05/2022</h2>
+</div>
 </html>
