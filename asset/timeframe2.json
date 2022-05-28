@@ -1,0 +1,338 @@
+[
+  {
+    "date":"02/05/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "Group processes- Wrote two paragraphs on the group processes section of the team profile. The first paragraph entailed what worked well for the group in assignment 2 and areas that could be improved such as communication between group members and allocation of work load. The second paragraph was about how we would implement these possible improvements moving into assignment 3 such as having a Trello board for work allocation."
+      },{
+        "name": "Heath",
+        "task": "Meeting agenda I wrote the meeting agendas and actions, this continued until the final meeting writing a short paragraph about the contents of each meeting."
+      },{
+        "name": "Lachlan",
+        "task": "Group Processes and Communications (Wrote out initial paragraphs discussing issues with communication encountered in previous assessment as well as group’s plans on how to deal with any more that may arise)"
+      },{
+        "name": "Shiou-Ping",
+        "task": "Tools(Understanding the requirement), wrote about the tools we would hypothetically use in our project."
+      },{
+        "name": "Henry",
+        "task": "Trello board, During this week I just made the trello board for the group and got everyone to add their tasks to the list and I finalised the list."
+      },{
+        "name": "Ryan",
+        "task": "Overview -\nWithin this first week I completed the Overview; involving around 5 paragraphs that  summarised our project, including the Topic; covering the basic idea of what our project is, Motivation; I covered the main purpose of our project and the Landscape; discussing what our project will look like and the competitors in the market.\n"
+      }
+    ]
+  },
+  {
+    "date":"09/05/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "Career Plan and Ideal Job comparison- \nWrote two paragraphs on the ideal jobs and career plans section of the team profile. The first paragraph was about the similarities and differences between the career plans of each group member. The second paragraph talked about the similarities and differences between the ideal jobs of group member based on their description and skilled required.\n"
+      },{
+        "name": "Heath",
+        "task": "Scope and limits\nWrote up about two paragraphs worth of writing for the scope and limits detailing the main goals for this project, what is going to be achieved, what could potentially be achieved and finally what would not be achieved.\n"
+      },{
+        "name": "Lachlan",
+        "task": "Group Processes and Communications, floor plan creator testing(added some more content to group processes and communications, as well as tested a variety of apps to create some basic floorplan objects for use in Unity)"
+      },{
+        "name": "Shiou-Ping",
+        "task": "Description on Tools\nDuring this week I create the tools section(although we never used most of the tools mentioned at this stage) and trying to understand that what exactly need to be done in skill section\n\n"
+      },{
+        "name": "Henry",
+        "task": "Project Desc\nDuring this week I spent my time doing the project description however I purposely did not finish it as I am waiting for feedback from assignment 2 before finalizing the brief.\n"
+      },{
+        "name": "Ryan",
+        "task": "Overview -\nWithin this first week I completed the Overview; involving around 5 paragraphs that  summarised our project, including the Topic; covering the basic idea of what our project is, Motivation; I covered the main purpose of our project and the Landscape; discussing what our project will look like and the competitors in the market.   \n"
+      }
+    ]
+  },
+  {
+    "date":"16/05/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "DD(Roles)-\nWrote up section for roles. In the paragraph it outlined how rather than assigning specific roles for each group member we would assign specific tasks for each group to complete. Having a Trello also helped aided the assigning of tasks.\n\nWebsite – Created website frame with all required sections and altered the design according to feedback from assignment2\n\n"
+      },{
+        "name": "Heath",
+        "task": "DD(Skills and jobs)\nI was to help Shiou-Ping with the work that he was struggling to complete, essentially I restricted the entire section and did the majority of the writing for the section.\n"
+      },{
+        "name": "Lachlan",
+        "task": "Plans/progress, ARWAY testing(added initial paragraphs about group plans and added a small summary of progress thus far, left space for a couple of paragraphs once we have a good understanding of how ARWAY and Unity will work to then be filled in. Began trying to work with ARWAY. Created a rough floorplan object of 08.08.82 and the surrounding areas.)"
+      },{
+        "name": "Shiou-Ping",
+        "task": "DD-Skills(UI/UX) From what I heard it should be like those on job advertising sites but apparently it not, I tried to rewrote the whole thing but it's filled up already so I only finished the UI part under skill section."
+      },{
+        "name": "Henry",
+        "task": "DD(Aims)\nDD(plans/progress)\nDuring the first half of the week I completed the majority of DD Aims and tidyed up a bit of the project description, in the second half I worked on re designing the plans and progress section by breaking down the data into week formats. The trello board helped me during this week as it allowed me to see what still needed to be done.\n"
+      },{
+        "name": "Ryan",
+        "task": "Skills and Jobs (Common Traits)\nWithin the ‘Skills and Jobs’ section of our project report I assisted Shiou-Ping with the common traits. I researched each potential job advertisement \n"
+      }
+    ]
+  },
+  {
+    "date":"23/05/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "DD(Artefacts) - Figma wireframes and mockup\nUsed the website Figma to create a mockup of the final application of the MARPS project idea. It shows a rough representation of the placement of features, design and UI elements. Used wireframes to link different pages together and to show how to user would navigate between them.\nGroup reflection- Wrote group reflection paragraph detailing what went well, what could be improved, things that were surprising and things that we learned."
+      },{
+        "name": "Heath",
+        "task": "I was on call for any work that anyone wanted me to do, offering myself for any odd jobs that needed to be completed or progressed on."
+      },{
+        "name": "Lachlan",
+        "task": "ARWAY Testing/Map Creation, Group Processes and Communications, Progress (created a functional map of the area around 08.08.82, added final paragraph to group processes and communications, finished ading content to progress section)"
+      },{
+        "name": "Shiou-Ping",
+        "task": "Website:\nFill up our website with new content from our report document\nAnd prototype\n, reconstruct UI with JQuery so it looks less clutter\n"
+      },{
+        "name": "Henry",
+        "task": "Project Desc, DD(Aims)\nDuring this week I finalized the project description to a sufficient level and finalized the DD aims to better reflect the end goal. I also spent some time researching into ARWAY to begin the development of the application.\n"
+      },{
+        "name": "Ryan",
+        "task": "Report Editing / Finalisation& Group Reflection\nThroughout the last week it was allocated to my job to edit the report and display it within a presentable manner. Also, it is my role to complete the summary of our individual reflections of our group work. \n"
+      }
+    ]
+  },
+  {
+    "date":"30/05/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "Presentation"
+      },{
+        "name": "Heath",
+        "task": "Presentation"
+      },{
+        "name": "Lachlan",
+        "task": "Presentation"
+      },{
+        "name": "Shiou-Ping",
+        "task": "Presentation"
+      },{
+        "name": "Henry",
+        "task": "Presentation and planning"
+      },{
+        "name": "Ryan",
+        "task": "Presentation"
+      }
+    ]
+  },
+  {
+    "date":"06/06/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "Update the roles section- add delegated tasks and responsibilities\n\nAdd tasks to Trello board- After updating the roles with tasks and responsibility this can be translated on the Trello board."
+      },{
+        "name": "Heath",
+        "task": "Update the limits of the project depending on what is being developed"
+      },{
+        "name": "Lachlan",
+        "task": "ARWAY Mapping\nScanning floorplans, placing objects and exporting to ARWAY\n"
+      },{
+        "name": "Shiou-Ping",
+        "task": "AWAY\nresearch on \ndevice\nimplementation\n"
+      },{
+        "name": "Henry",
+        "task": "ARWAY mapping"
+      },{
+        "name": "Ryan",
+        "task": "Update Overview of our project "
+      }
+    ]
+  },
+  {
+    "date":"13/06/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "Front end UI and technical elements of app development using ARWAY- Creating login screen for the application to only allow RMIT members to access the features."
+      },{
+        "name": "Heath",
+        "task": "Assisting  anyone that needs it"
+      },{
+        "name": "Lachlan",
+        "task": "ARWAY Mapping\nCreating navigation maps from floorplans and models in ARWAY web suite."
+      },{
+        "name": "Shiou-Ping",
+        "task": "Refine the website to ensure it’s presentable"
+      },{
+        "name": "Henry",
+        "task": "ARWAY mapping"
+      },{
+        "name": "Ryan",
+        "task": "ARWAY Mapping"
+      }
+    ]
+  },
+  {
+    "date":"20/06/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "Front end UI app development using ARWAY-\nUsing the Figma mockup prototype as a reference. Will create an operational UI for the application."
+      },{
+        "name": "Heath",
+        "task": "Assisting  anyone that needs it"
+      },{
+        "name": "Lachlan",
+        "task": "ARWAY Mapping\nScanning floorplans, placing objects and exporting to ARWAY\n"
+      },{
+        "name": "Shiou-Ping",
+        "task": "AWRWAY Implement to device, code development"
+      },{
+        "name": "Henry",
+        "task": "ARWAY refining"
+      },{
+        "name": "Ryan",
+        "task": "ARWAY Mapping"
+      }
+    ]
+  },
+  {
+    "date":"27/06/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "Front end UI app development using ARWAY- Using the Figma mockup prototype as a reference. Will create an operational UI for the application"
+      },{
+        "name": "Heath",
+        "task": "Assisting  anyone that needs it"
+      },{
+        "name": "Lachlan",
+        "task": "ARWAY Mapping\nCreating navigation maps from floorplans and models in ARWAY web suite\n"
+      },{
+        "name": "Shiou-Ping",
+        "task": "AWRWAY Implement to device, code development"
+      },{
+        "name": "Henry",
+        "task": "Checking ARWAY paths"
+      },{
+        "name": "Ryan",
+        "task": "ARWAY Mapping"
+      }
+    ]
+  },
+  {
+    "date":"04/07/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "User testing- Getting volunteers for testing the application and getting feedback"
+      },{
+        "name": "Heath",
+        "task": "Bug testing"
+      },{
+        "name": "Lachlan",
+        "task": "ARWAY Mapping\nScanning floorplans, placing objects and exporting to ARWAY\n"
+      },{
+        "name": "Shiou-Ping",
+        "task": "AWRWAY Implement to device, code development"
+      },{
+        "name": "Henry",
+        "task": "Bug testing"
+      },{
+        "name": "Ryan",
+        "task": "ARWAY Mapping"
+      }
+    ]
+  },
+  {
+    "date":"11/07/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "User Testing- Getting volunteers for testing the application and getting feedback\n"
+      },{
+        "name": "Heath",
+        "task": "ARWAY assistant"
+      },{
+        "name": "Lachlan",
+        "task": "ARWAY Mapping\nCreating navigation maps from floorplans and models in ARWAY web suite\n"
+      },{
+        "name": "Shiou-Ping",
+        "task": "AWRWAY Implement to device, code development"
+      },{
+        "name": "Henry",
+        "task": "Bug testing"
+      },{
+        "name": "Ryan",
+        "task": "ARWAY Mapping"
+      }
+    ]
+  },
+  {
+    "date":"18/07/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "Updating front end UI app - Making changes to UI/technical features according to results from user testing"
+      },{
+        "name": "Heath",
+        "task": "Helping to finish off the project, fixing loose ends"
+      },{
+        "name": "Lachlan",
+        "task": "ARWAY Mapping\nScanning floorplans, placing objects and exporting to ARWAY\n"
+      },{
+        "name": "Shiou-Ping",
+        "task": "AWRWAY Implement to device, code development"
+      },{
+        "name": "Henry",
+        "task": "Research"
+      },{
+        "name": "Ryan",
+        "task": "Updating documentation - Risks"
+      }
+    ]
+  },
+  {
+    "date":"25/07/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "ARWAY Mapping- Scanning more floor plans for RMIT buildings and exporting to ARWAY"
+      },{
+        "name": "Heath",
+        "task": "Help with publishing the project."
+      },{
+        "name": "Lachlan",
+        "task": "ARWAY Mapping\nCreating navigation maps from floorplans and models in ARWAY web suite\n"
+      },{
+        "name": "Shiou-Ping",
+        "task": "Application QA testing"
+      },{
+        "name": "Henry",
+        "task": "Publishing"
+      },{
+        "name": "Ryan",
+        "task": "Final Publishing / Updates "
+      }
+    ]
+  },
+  {
+    "date":"01/08/22",
+    "content": [
+      {
+        "name": "Adrian",
+        "task": "ARWAY Mapping-\nScanning more floor plans for RMIT buildings and exporting to ARWAY\n"
+      },{
+        "name": "Heath",
+        "task": "damn (it took a long time for this project to reach completion but now that it is finally done I can relax, yahoo!)"
+      },{
+        "name": "Lachlan",
+        "task": "ARWAY Mapping\nScanning floorplans, placing objects and exporting to ARWAY\n"
+      },{
+        "name": "Shiou-Ping",
+        "task": "Application QA testing"
+      },{
+        "name": "Henry",
+        "task": "Advertising like a boss\n(crippling ads)\n"
+      },{
+        "name": "Ryan",
+        "task": "Advertising MARPS"
+      }
+    ]
+  }
+]
