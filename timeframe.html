@@ -25,71 +25,40 @@
             <a href="projectdescription.html">Project description</a><br>
             <a href="overview.html">Overview</a><br>
             <a href="detaileddescription.html">Detailed Description</a><br>
+            <a class="current"  href="timeframe.html">Time Frame</a><br>
             <a href="reflection.html">Reflections</a><br>
             <a href="Tools.html">Tools</a><br>
-            <a class="current"  href="timeframe.html">Time Frame</a><br>
         </div>
     </div>
-    <div class="main" id="timeframe">
-        <section>
-            <div>
-                <h2>Weekly completion</h2>
-            </div>
-            <table class="table-primary" id="complete_table" style="width: 800px">
-                <tbody>
-                    <script>
-                        $(document).ready(function () {
-                            $.getJSON("asset/timeframe1.json",function (data){
-                                var row = ''
-                                var previous = 0
-                                $.each(data, function (key, value){
-                                    if(previous !== value.week){
-                                        row +='';
-                                        row +='<tr>';
-                                        row += '<th scope ="col" colspan ="2">Week ' + value.week + '</th>'
-                                        row +='</tr>';
-                                        row += '<tr><th scope="col">Name</th><th scope="col">Task</th></tr>'
-                                        previous = value.week
-                                        console.log(previous)
-                                    }
-                                    row +='<tr>';
-                                    row +='<td>' + value.name + '</td>';
-                                    row +='<td>' + value.task + '</td>';
-                                    row +='</tr>';
+    <div class="main">
+        <h2>Schedule planning</h2>
+        <table id="complete_table">
 
-                                });
-                                $('#complete_table').append(row);
-                            });
-                        });
-                    </script>
-                </tbody>
-            </table>
-        </section>
+        </table>
         <div>
-            <div>
-                <h2>Schedule planning</h2>
-            </div>
-            <div>
-                <script>
-                    $(document).ready(function () {
-                        $.getJSON("asset/timeframe2.json",function (data){
-                            var tabs = ''
-                            $.each(data, function (key, i){
-                                tabs += '<table style="width: 800px">';
-                                tabs += '<tr><th scope="col" colspan="2"></th><h2>'+i.date+'</h2></tr>'
-                                $.each(i.content, function  (key, j){
-                                    tabs += '<tr>';
-                                    tabs += '<td>'+ j.name+'</td>';
-                                    tabs += '<td>'+ j.task+'</td>';
-                                    tabs += '</tr>';
-                                });
-                                tabs += '</table>';
+
+        </div>
+        <div>
+            <script>
+                var tabs = ''
+                $(document).ready(function () {
+                    $.getJSON("asset/timeframe2.json",function (data){
+
+                        $.each(data, function (key, i){
+                            tabs += '<table id="complete_table" style="width: 800px">';
+                            tabs += '<tr><th scope="col" colspan="2"><h2>'+i.date+'</h2></tr>'
+                            $.each(i.content, function  (key, j){
+                                tabs += '<tr>';
+                                tabs += '<td>'+ j.name+'</td>';
+                                tabs += '<td>'+ j.task+'</td>';
+                                tabs += '</tr>';
                             });
-                            $('#complete_table').append(tabs);
+                            tabs += '</table>';
                         });
+                        $('#complete_table').append(tabs);
                     });
-                </script>
-            </div>
+                });
+            </script>
         </div>
     </div>
 </div>
