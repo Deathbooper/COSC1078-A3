@@ -44,47 +44,23 @@ body {
   <div class="main">
     <h1>Detailed Description - IT Project - MARPS</h1>
     <div>
-      <h1>Aims:</h1>
-      <p>The goal: The goal for MARPS is to be able to direct RMIT users from building 8/08 elevator to room 82.</p>
-    </div>
-    <div>
-      <h2>Overarching aim:</h2>
-      <p>The aim for the creation of MARPS is to be able to direct a user around a room using AR technology on a phone. MARPS will show the user a line on their screen using their camera to direct them around the room to different pre-selected points. It Shall also inform the user of and present dangers. The result will be a completed prototype that proves the concept of a full-scale AR map for the internal of buildings. In order to achieve the successful completion of MARPS there has to be aims set, they are as follows:</p>
-      <li><p>The first sub-aim is to complete research into different tools and technologies that are readily available that will allow for the map to be produced and created. Thorough research will have to be done here to ensure that the project will succeed. Without this step the project will never be able to get off the ground. A backup plan has been put in place for if this step is completed but no program can be found that will allow us to produce what we are looking for. (Backup plan 1.1)</p></li>
-      <li><p>The second sub-aim is to take the technology that has been decided and found and to implement it to an experiment, the experiment will be to scan a small area and test to see if the program will work. Through doing this it will teach us how to use the program and how it reacts to the physical environment, and in return it will allow for a higher quality product to be produced. Should the aim of this step fail to be completed backup plan 1.2 will be implemented.</p></li>
-      <li><p>The third sub-aim is to then start the production of MARPS, a scan will be done of the area and will be completed and uploaded to ARWAY. The aim will be to have an online environment that is the same scale as the physical environment. Should a problem occur with this step backup plan 1.3 will be implemented.</p></li>
-      <li><p>The fourth sub-aim is to transfer the scanned data into unity and mockup the environment. This aim will be to create the online environment that the user will not see. A detailed breakdown for how this will be done can be found in the plans/progress section. This step is one of the most important steps out of all of them due to it being a critical step to mapping the scannable area. Should this step fail final backup plan will be implemented.</p></li>
-      <li><p>The fifth sub-aim is to reupload the environment from unity into ARWAY and start production on the interface to select points of interest. This step is what the user will see, more details on this will be located in the plans and progress section. The importance of this aim is so that the users will have something to be able to click on to navigate. Should this step fail Final backup plan will be implemented.</p></li>
-      <li><p>The sixth sub-aim is to finalize MARPS and test to ensure the product will work. This is the most crucial step in the production process as it is important that the product will complete the goal that was set, the goals for a successful product can be seen below. If this step fails Final backup plan will be implemented. </p></li>
-    </div>
-    <div>
-      <h2>Finished product goals:</h2>
-      <li><p>Display the path on a phone screen using the camera to navigate around a room.</p></li>
-      <li><p>Be easy to understand and use for new users</p></li>
-      <li><p>Successfully arrive at the user specified location within the room</p></li>
-      <li><p>Show structural dangers whilst navigating through the room</p></li>
-      <li><p>Show an emergency escape route to leave the room</p></li>
-    </div>
-    <div>
-      <h2>Backup plan 1.1:</h2>
-      <p>Should the plan fail to find an application that will allow us to produce an AR map that is of a high standard, we will just create a proof of concept mockup, steps 2,4 and 5 will be skipped and will move straight onto step 6. Should this backup plan fail to be achieved then the project will skimpily not be made up. </p>
-    </div>
-    <div>
-      <h2>Backup plan 1.2:</h2>
-      <p>Should we fail to be able to test the program we will seek help from experienced users of the product. This will allow us to better understand the program. Alternatively, if no help can be found we will move back to step 1 and find a new program that could be used. Should this fail backup plan 1.1 will be implemented.</p>
-    </div>
-    <div>
-      <h2>Backup plan 1.3:</h2>
-      <p>Should we fail to be able to scan the physical environment, we will try to find another application that can do it for us, or we will physically make the outline on unity and then re upload it to the program. Should any other errors occur we will attempt to seek help from experts to try and solve the problem or we will move onto a figma mockup similar to backup plan 1.1.</p>
-    </div>
-    <div>
-      <h2>Final backup plan:</h2>
-      <p>The final backup plan is if everything is not going to plan and we are running out of time we will focus all of our attention to the figma mockup. This will allow us to have an artifact to present when presentations come up. </p>
+      <h1>Testing:</h1>
+      <h2>Floorplan Scan Tools</h2>
+      <p>A group member recommended RoomScan LiDAR for getting floor plans for the ARWAY app as it is required floor plans for pathfinding. The app was supposed to scan rooms and use machine learning with LiDAR scanning to measure and place symbols that can represent doors, windows, symbols on floor plans created from scratch. However, for proper compatibility with the app, an iPhone 12 pro was required, and the group member who was supposed to use the app did not have an iPhone 12 pro, so they needed to scan the rooms manually. After creating a room scan for the first time and attempting to create another room scan there was a pop up that prevented usage until there was payment made so the group was unable to use the application for scanning further floor plans.</p> 
+      <p>Similar apps were tested afterwards, these being Roomscan Pro and Polycam LiDAR and 3D Scanner, but these suffered from the same issue of requesting a quite pricey subscription for use. Eventually an application was found that had a proper free version, and not just a one-off test. The Magicplan app allows users to create up to two projects on its free version, which suits our purposes for this testing phase. It functions by using the user’s phone camera to place points in the corners of rooms to build a floor plan, then the user sets the height of the room, then finally places objects such as doors and furniture. From this the application creates a 3D object that can be exported as an .obj file, for use in Unity.</p>
+      <h2>ARWAY</h2>
+      <p>ARWAY proved to be quite a time sink when it came to map creation and testing, and currently we are unable to test whether the navigation aspect of the map is implemented correctly as we do not have an application to connect to it with. The intended outcome of the map aspect of ARWAY is that a user will be able to connect to the map from their application, which will then pull the camera feed from their phone and locate them within the mapped area, then guide them to their selected waypoint. Our maps currently have navigation paths, waypoints and several key features of the area, but we do not currently have a method to test its functionality. ARWAY’s developer documentation unfortunately does not make it overly clear as to how to actually create an application to connect to the map, so once we have learnt how to create this application, we will be able to conduct some proper testing of our maps. If our maps as they currently are do not function properly, the web suite allows for maps to be updated live, so this should allow for needed changes to be rolled out rapidly. We will know we have succeeded with our maps when they are able to successfully identify the location of the user within the RMIT Building 8 Floor 8 area and navigate them to room 82. Once this has been achieved, we can then expand to the rest of the floor, and then move further from there.</p>
+      <h2>Figma</h2>
+      <p>The group looked at ways to represent the prototype for the app regarding UI and UX. The group came across a website called Figma which is a vector graphics editor and prototyping tool. This website allowed the creation of a mockup mobile app for iOS that allowed real-time viewing and UI operation of the app. Due to previous experience with Figma from the group’s UCD course which also had them design and develop and app, Figma was the first choice for prototyping an app UI.</p>  
+      <p>A group member who was responsible for creating the Figma mockup created multiple pages with the layout and dimensions of an iPhone 13 pro max to use as a template for the MARPS application. They then created a splash screen for the application using time delayed transitions to mimic a conventional mobile application.</p>
+      <p>As the MARPS application was specifically for navigating through RMIT using AR technology it was important to include a login screen so that only authorized personnel would be able to use the app to navigate RMIT.</p>
+      <p>A menu was created which contained three clickable buttons each of which represented a specific feature of the app such as AR room finder, AR emergency exit finder and an AR room finder for disabled people. Through using the built-in wireframes in Figma they linked each of these buttons to separate pages. In the AR room finder and AR disabled room finder page entry boxes were placed for users to input their desired building, floor and room. In the emergency exit finder, the user would be able to input their building and floor.</p>
+      <p>Each of these input pages had a navigate button placed at the button which would be linked to the AR display page which had a gif concept of how the user would navigate using the application to find either a room or emergency exit. Back buttons were also placed on each page to allow users to go back to previous pages.</p>
     </div>
   </div>
 </div>
 <div class="footer">
-  <h2>Last updated: 30/04/2022</h2>
+  <h2>Last updated: 29/05/2022</h2>
 </div>
 </body>
 </html>
